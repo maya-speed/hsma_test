@@ -1,0 +1,258 @@
+ /* Allgemeine Stile */
+ /* Hintergrundbild für den gesamten Body */
+body {
+    background-image: url('pexels-fwstudio-33348-172289.jpg');
+    background-size: cover; /* Passt das Bild an die Größe des Viewports an */
+    background-position: center; /* Zentriert das Bild im Hintergrund */
+    background-repeat: no-repeat; /* Verhindert, dass das Bild sich wiederholt */
+    background-attachment: fixed; /* Fixiert das Bild beim Scrollen */
+    font-family: Egyptienne, serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+body {
+    font-family: Egyptienne, serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background-color: rgb(44, 81, 44);
+    color: #ecf0f1;
+    padding: 10px 0;
+    border-bottom: 1px solid #34495e;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: normal;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: forestgreen;
+}
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+    background-color: rgb(44, 81, 44);
+    color: #ecf0f1;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    margin: 10px 0 0;
+    font-size: 1em;
+}
+
+ 
+ /* Content Section */
+.services h2 {
+    margin-top: 30px; /* Abstand nach oben */
+    margin-bottom: 2px; /* Abstand nach unten */
+    font-size: 1.5em;
+    color: rgb(44, 81, 44);
+}
+
+.services p {
+    margin: 0 0 30px; /* Abstand nach unten */
+}
+
+/* Footer */
+footer {
+    background-color: rgba(236, 240, 241, 0.8);
+    color: #49631b;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+footer .info {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+footer .info h2, footer .info h3 {
+    margin-top: 0;
+    color: #ecf0f1;
+}
+
+footer .info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer .info ul li {
+    margin: 5px 0;
+    font-size: 1.2em;
+    background: url('hammer-icon.png') no-repeat left center;
+    padding-left: 25px;
+}
+ /* Bild im Footer */
+.footer-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.footer-image img {
+    width: calc(100% / 5 - 20px); /* Gleiche Größe wie die Bilder im Raster */
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Registration Form */
+.registration-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.registration-form label {
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+.registration-form input,
+.registration-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+.registration-form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(44, 81, 44, 0.9);
+    color: #ecf0f1;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.registration-form button:hover {
+    background-color: rgb(80, 147, 67);
+}
+
+/* Team Member */
+.team-member {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover; /* Ensures the image is properly scaled to fit the container */
+    margin-right: 15px;
+}
+
+/* Contact Info */
+.contact-info {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #2c512c;
+    font-weight: bold;
+    text-align: center;
+}
+
+  /* Image Grid */
+.image-grid {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.image-grid h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: rgb(44, 81, 44);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+}
+
+.grid-item {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* For a square aspect ratio */
+}
+
+.grid-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+    transform: scale(1.1);
+}
+/* Impressum */
+#impressum {
+    background-color: rgba(236, 240, 241, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+#impressum h2 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: rgb(44, 81, 44);
+}
+
+#impressum p {
+    margin: 5px 0;
+}

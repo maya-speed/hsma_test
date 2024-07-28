@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="utf-8" />
+    <title>Kontakt - Schreinerei Schäfer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Kontakt</h1>
+            <p>Wilhelmsfelderstraße 105, 69118 Ziegelhausen Heidelberg</p>
+        </section>
+        <section class="content">
+            <h2>Anmeldung</h2>
+            <form action="/submit_registration" method="post" class="registration-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Telefon:</label>
+                <input type="tel" id="phone" name="phone" required>
+                
+                <label for="message">Nachricht:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                
+                 
+                <label for="concern">Anliegen:</label>
+                <select id="concern" name="concern" required>
+                    <option value="" disabled selected>Bitte wählen Sie ein Anliegen</option>
+                    <option value="angebot">Angebotsanfrage</option>
+                    <option value="beratung">Beratung</option>
+                    <option value="reparatur">Reparatur</option>
+                    <option value="allgemein">Allgemeine Anfrage</option>
+                </select>
+                
+                <button type="submit">Anmelden</button>
+            </form>
+            <p class="contact-info">Oder rufen Sie uns an unter: 06221 804738</p>
+        </section>
+    </main>
+
+    <footer>
+        <section class="footer-content">
+            <div class="opening-hours">
+                <h2>Öffnungszeiten</h2>
+                <ul>
+                    <p>Montag bis Freitag: 08:00 - 16:30</p>
+                </ul>
+                <h3>Ferienzeiten</h3>
+                <ul>
+                    <p>22. Dezember - 08. Januar</p>
+                </ul>
+            </div>
+            <div class="contact-info">
+                <p>Wilhelmsfelderstraße 105, 69118 Ziegelhausen Heidelberg</p>
+                <p>Telefon: 06221 804738</p>
+            </div>
+        </section>
+        
+        <div class="footer-image">
+            <img src="IMG_3979.jpg" alt="Footer Bild">
+        </div>
+        
+        <section id="impressum">
+            <h2>Impressum</h2>
+            <p><strong>Schreinerei Schäfer</strong></p>
+            <p>Wilhelmsfelderstraße 105</p>
+            <p>69118 Ziegelhausen Heidelberg</p>
+            <p>Telefon: 06221 804738</p>
+            <p>E-Mail: info@schreinerei-schaefer.de</p>
+            <p><strong>Vertreten durch:</strong> Andreas Schäfer</p>
+            <p><strong>Umsatzsteuer-ID:</strong> DE123456789</p>
+            <p><strong>Handwerkskammer:</strong> Handwerkskammer Mannheim</p>
+            <p><strong>Inhaltlich verantwortlich gemäß § 55 Abs. 2 RStV:</strong> Andreas Schäfer</p>
+        </section>
+    </footer>
+</body>
+</html>
